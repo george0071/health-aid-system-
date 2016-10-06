@@ -4,9 +4,21 @@
         <servlet-name>demo</servlet-name>
         <servlet-class>demo</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>diseases</servlet-name>
+        <servlet-class>diseases</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>all_diseases</servlet-name>
+        <servlet-class>admin.all_diseases</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>demo</servlet-name>
         <url-pattern>/demo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>all_diseases</servlet-name>
+        <url-pattern>/all_diseases</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
