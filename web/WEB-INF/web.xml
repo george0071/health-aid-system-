@@ -12,6 +12,14 @@
         <servlet-name>all_diseases</servlet-name>
         <servlet-class>admin.all_diseases</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>add_symptoms</servlet-name>
+        <servlet-class>admin.add_symptoms</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>processAddSymptom</servlet-name>
+        <servlet-class>processAddSymptom</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>demo</servlet-name>
         <url-pattern>/demo</url-pattern>
@@ -19,6 +27,14 @@
     <servlet-mapping>
         <servlet-name>all_diseases</servlet-name>
         <url-pattern>/all_diseases</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>add_symptoms</servlet-name>
+        <url-pattern>/add_symptoms</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>processAddSymptom</servlet-name>
+        <url-pattern>/processAddSymptom</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
