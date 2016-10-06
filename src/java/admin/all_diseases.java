@@ -50,7 +50,7 @@ public class all_diseases extends HttpServlet {
 
             out.println("<div class='container'>");
             out.println("<div class='row'>");
-
+            out.println("<a href='admin/add-disease.html' class='btn btn-primary pull-right'>Add</a>");
             out.println("<h1>Admin</h1>");
 
             out.println("<div class='panel panel-default'>");
@@ -75,6 +75,7 @@ public class all_diseases extends HttpServlet {
                 out.println("Currently");
                 out.println("<table class='table table-hover table-striped'>");
                 out.println("<thead>");
+                out.println("<th>SN</th>");
                 out.println("<th>Name</th>");
                 out.println("<th>Edit</th>");
                 out.println("<th>Delete</th>");
@@ -82,6 +83,9 @@ public class all_diseases extends HttpServlet {
                 out.println("<tbody>");
                 while (rs.next()) {
                     out.println("<tr>");
+                    out.println("<td>");
+                    out.println(rs.getInt("d_id"));
+                    out.println("</td>");
                     out.println("<td>");
                     out.println(rs.getString("d_name"));
                     out.println("</td>");
