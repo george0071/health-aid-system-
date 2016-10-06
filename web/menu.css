@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 18, 2016, 11:32:23 PM
+    Author     : PHONCE
+*/
+
+#menu{
+height:60px;
+background-color:graytext
+}
+#menu{
+    margin:0;
+    padding:0;
+    
+}
+#menu li{
+    list-style-type: none;
+    float: left;
+    display: block;
+    width:150px;
+    height: 60px;
+    text-align: center;
+    line-height: 55px;
+    font-family:Tahoma,Geneva,sans-serif;
+    font-size: 18px;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: white;
+    
+}
+#menu li:hover{
+    background-color:red;
+}
+
