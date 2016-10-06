@@ -19,6 +19,16 @@
     <servlet>
         <servlet-name>processAddSymptom</servlet-name>
         <servlet-class>processAddSymptom</servlet-class>
+        <servlet-name>add_disease</servlet-name>
+        <servlet-class>admin.add_disease</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>process_add_disease</servlet-name>
+        <servlet-class>admin.process_add_disease</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>processAddDisease</servlet-name>
+        <servlet-class>processAddDisease</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>demo</servlet-name>
@@ -35,6 +45,16 @@
     <servlet-mapping>
         <servlet-name>processAddSymptom</servlet-name>
         <url-pattern>/processAddSymptom</url-pattern>
+        <servlet-name>add_disease</servlet-name>
+        <url-pattern>/add_disease</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>process_add_disease</servlet-name>
+        <url-pattern>/process_add_disease</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>processAddDisease</servlet-name>
+        <url-pattern>/processAddDisease</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
